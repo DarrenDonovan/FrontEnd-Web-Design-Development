@@ -1,2 +1,2 @@
-# FrontEnd-Web-Design-Development
-Web Design and Development Project FrontEnd
+# Web-Design-and-Development-Project
+Web Design and Development
