@@ -159,7 +159,7 @@ input {
   transform: translateX(-100%);
 }
 
-.overlay {
+.overlay { /*Change these color palettes to change the colors*/
   background: #ff416c;
   background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
   background: linear-gradient(to right, #ff4b2b, #ff416c);
