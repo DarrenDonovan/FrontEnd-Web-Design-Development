@@ -9775,3 +9775,39 @@ h6,
   border: 2px solid #000;
   border-radius: 50%;
 }
+
+.profilename{
+  margin-top: 20px;
+  margin-bottom: 3px;
+  font-weight: lighter;
+  padding-bottom: 50px;
+}
+
+.btn-editprofile {
+  text-align: center;
+  margin-left: 600px;
+  border-radius: 999px;
+}
+
+.formedit{
+  margin: 20px;
+}
+
+.tableedit{
+  width: 100%;
+  margin: 10px;
+}
+
+td{
+  width: 50%;
+}
+
+.buttonupdate{
+ margin: 20px;
+ border-radius: 999px;
+}
+
+.buttoncancel{
+  margin: 20px;
+  border-radius: 999px;
+}
