@@ -116,7 +116,7 @@
     <!-- Header End -->
 
 
-    <!-- Booking Start -->
+    <!-- Search Start -->
     <div class="container-fluid booking mt-5 pb-5">
         <div class="container pb-5">
             <div class="bg-light shadow" style="padding: 30px;">
@@ -174,10 +174,10 @@
             </div>
         </div>
     </div>
-    <!-- Booking End -->
+    <!-- Search End -->
 
 
-    <!-- Packages Start -->
+    <!-- Hotel Booking Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
@@ -186,7 +186,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
+                    <div class="package-item bg-white mb-2" data-toggle="modal" data-target="#myModal">
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
@@ -205,7 +205,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
+                    <div class="package-item bg-white mb-2" data-toggle="modal" data-target="#myModal">
                         <img class="img-fluid" src="img/package-2.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
@@ -224,7 +224,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
+                    <div class="package-item bg-white mb-2" data-toggle="modal" data-target="#myModal">
                         <img class="img-fluid" src="img/package-3.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
@@ -243,7 +243,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
+                    <div class="package-item bg-white mb-2" data-toggle="modal" data-target="#myModal">
                         <img class="img-fluid" src="img/package-4.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
@@ -262,7 +262,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
+                    <div class="package-item bg-white mb-2" data-toggle="modal" data-target="#myModal">
                         <img class="img-fluid" src="img/package-5.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
@@ -281,7 +281,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="package-item bg-white mb-2">
+                    <div class="package-item bg-white mb-2" data-toggle="modal" data-target="#myModal">
                         <img class="img-fluid" src="img/package-6.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
@@ -302,8 +302,54 @@
             </div>
         </div>
     </div>
-    <!-- Packages End -->
+    <!-- Hotel Booking End -->
 
+
+    <!-- Modal  Start-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Booking Hotel</h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td><img src="" alt="Hotel Image"></td>
+                                <td>Product ID <br>Product Name <br>Destination</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Duration</td>
+                                <td><button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;">-</button>  
+                                    <button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;">+</button></td>
+                            </tr>
+                            <tr>
+                                <td>Total:</td>
+                                <td>Rp. xxx.xxx</td>
+                            </tr>
+                            <tr>
+                                <td>Payment Method</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align: center;">
+                        <Button type="button" class="btn btn-primary">Cash</Button>
+                        <Button type="button" class="btn btn-primary" style="margin-inline: 20px;">Credit</Button>
+                        <Button type="button" class="btn btn-primary">Debit</Button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+      
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
