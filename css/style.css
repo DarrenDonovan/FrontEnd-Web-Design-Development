@@ -10222,3 +10222,14 @@ td {
   margin: 20px;
   border-radius: 999px;
 }
+
+.btn-purchasedetail{
+float: right;
+}
+.purchaseno{
+  width: 90%;
+}
+
+.destination{
+  width: 30%;
+}

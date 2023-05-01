@@ -107,7 +107,15 @@
                 <h5>Data 1</h5>
                 <h5>Data 2</h5>
 
-                <div class="row mb-4"></div>
+                <div class="row pl-3 mt-4 pt-4">
+                  <h4>Purchase History</h4>
+                </div>
+                <div class="row pl-3 mb-4 mt-2 pt-3" style="border: 1px solid black; border-radius: 10px;">
+                  <h5 class="purchaseno">Purchase......</h5>
+                  <a href="#" data-toggle="modal" data-target="#myModal2"><button class="btn-purchasedetail">Details</button></a>
+                  <br>
+                  <p class="destination">Destination : </p>
+                  </div>
             </div>
           </div>
         </div>
@@ -115,7 +123,7 @@
     </div>
     <!-- Profile End -->
 
-    <!-- Modal Start -->
+    <!-- Edit Profile Modal Start -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -160,7 +168,27 @@
           </div>
         </div>
       </div>
-      <!-- Modal End -->
+      <!-- Edit Profile Modal End -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="myModal2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Purchase Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Detail 1 : </p><br>
+        <p>Detail 2 : </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <!-- JavaScript Libraries -->
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -177,6 +205,7 @@
 
       <!-- Template Javascript -->
       <script src="js/main.js"></script>
+
   </body>
 
 </html>
