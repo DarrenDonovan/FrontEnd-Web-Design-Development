@@ -65,3 +65,17 @@
     },
   });
 })(jQuery);
+
+function increment(event) {
+  document.getElementById("numedit").value++;
+  event.preventDefault();
+}
+
+function decrement(event) {
+  if (document.getElementById("numedit").value > 1) {
+    document.getElementById("numedit").value--;
+    event.preventDefault();
+  } else {
+    event.preventDefault();
+  }
+}

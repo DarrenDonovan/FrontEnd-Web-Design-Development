@@ -124,7 +124,15 @@
                     <div class="col-md-10">
                         <div class="row">
                             <div class="col-md-3">
-                                    <h5 style="padding-top: 12px; text-align: center;">Destination</h5>
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>From</option>
+                                        <option value="1">Jakarta</option>
+                                        <option value="2">Bandung</option>
+                                        <option value="3">Surabaya</option>
+                                        <option value="4">Denpasar</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
@@ -138,7 +146,14 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <h5 style="padding-top: 12px; text-align: center;">Sort By</h5>
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Transportation</option>
+                                        <option value="1">Train</option>
+                                        <option value="2">Bus</option>
+                                        <option value="3">Flight</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
@@ -172,7 +187,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                        <div class="row" style="border: red solid 1px;">
+                        <div class="row">
                             <div style="width: 20%;">
                                 <img src="img/package-1.jpg" alt="tujuan" style="width: 100%; height: auto;">
                             </div>
@@ -194,7 +209,7 @@
                                 </div>
                             </div>
                             <div style="width: 10%; display: flex; align-items: center; justify-content: center;" class="text-center">
-                                <button class="btn btn-primary">Purchase</button>
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Purchase</button>
                             </div>                              
                         </div>
                     </div>
@@ -203,6 +218,57 @@
         </div>
     </div>
     <!-- Service End -->
+
+
+    <!-- Modal  Start-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Booking Hotel</h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td><img src="" alt="Hotel Image"></td>
+                                <td>Product ID <br>Product Name <br>From To Destination</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Quantity</td>
+                                <td><button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;" onclick="decrement(event)">-</button> 
+                                    <input type="number" min="1" value="1" readonly required class="text-center" id="numedit" style="width: 50px;"> 
+                                    <button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;" onclick="increment(event)">+</button></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>xx:xx - xx:xx</td>
+                            </tr>
+                            <tr>
+                                <td>Total:</td>
+                                <td>Rp. xxx.xxx</td>
+                            </tr>
+                            <tr>
+                                <td>Payment Method</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align: center;">
+                        <Button type="button" class="btn btn-primary">Cash</Button>
+                        <Button type="button" class="btn btn-primary" style="margin-inline: 20px;">Credit</Button>
+                        <Button type="button" class="btn btn-primary">Debit</Button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
 
 
     <!-- Testimonial Start -->
