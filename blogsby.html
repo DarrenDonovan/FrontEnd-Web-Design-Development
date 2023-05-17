@@ -13,7 +13,7 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -27,8 +27,8 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+     <!-- Topbar Start -->
+     <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
@@ -76,8 +76,8 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="destination.html" class="nav-item nav-link active">Destination</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="destination.html" class="nav-item nav-link">Destination</a>
+                        <a href="blog.html" class="nav-item nav-link active">Blog</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
@@ -103,13 +103,11 @@
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Destination</h3>
+                <h3 class="display-4 text-white text-uppercase">Blog</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Destination</p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Jakarta</p>
+                    <p class="m-0 text-uppercase">Blog</p>
                 </div>
             </div>
         </div>
@@ -117,109 +115,112 @@
     <!-- Header End -->
 
 
-    <!-- Destination Start -->
+    <!-- Blog Start -->
     <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
-                <h1>JAKARTA</h1>
-            </div>
+        <div class="container py-5">
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-1.jpg" alt="">
-                        <div class="destination-overlay text-white text-decoration-none">
-                            <h5 class="text-white">Monas</h5>
-                        </div>
+                <div class="col-lg-8">
+                    <div class="position-relative mb-4">
+                    <img class="profilepicblog" />
+                    <input type="text" class="contenttext" placeholder="Add Comments Here">
+                    <div class="button-container">
+                    <input type="button" value="Post" class="btn btn-primary">
+                    <input type="button" value="Cancel">
+                </div>
+                </div>
+                    <div class="row pb-3">     
+                        <div class="col mb-4 pb-2">
+                                <div class="bg-white p-4">
+                                    <div>
+                                    <h4>Comments</h4>
+                                    <div class="d-flex">
+                                    <img class="profilepiccomment" />
+                                    <p class="pt-4 pl-3">Lorem.</p>
+                                </div>
+                                    <p class="font-weight-bold">Username</p>
+                                </div>
+                                <div>
+                                    <div class="d-flex">
+                                    <img class="profilepiccomment" />
+                                    <p class="pt-4 pl-3">Lorem.</p>
+                                </div>
+                                    <p class="font-weight-bold">Username</p>
+                                </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-2.jpg" alt="">
-                        <div class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Kota Tua</h5>
-                        </div>
+    
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    
+
+                   <!-- Category List -->
+                   <div class="mb-5">
+                    <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Categories</h4>
+                    <div class="bg-white" style="padding: 30px;">
+                        <ul class="list-inline m-0">
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="destinationdetail.html"><i class="fa fa-angle-right text-primary mr-2"></i>Jakarta</a>
+                                <span class="badge badge-primary badge-pill">150</span>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="destinationdetail.html"><i class="fa fa-angle-right text-primary mr-2"></i>Bandung</a>
+                                <span class="badge badge-primary badge-pill">131</span>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="destinationdetail.html"><i
+                                        class="fa fa-angle-right text-primary mr-2"></i>Surabaya</a>
+                                <span class="badge badge-primary badge-pill">78</span>
+                            </li>
+                            <li class="mb-3 d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="destinationdetail.html"><i
+                                        class="fa fa-angle-right text-primary mr-2"></i>Denpasar</a>
+                                <span class="badge badge-primary badge-pill">56</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-3.jpg" alt="">
-                        <div class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Masjid Istiqlal</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-4.jpg" alt="">
-                        <div class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Tanah Abang</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-5.jpg" alt="">
-                        <div class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">PRJ</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-toggle="modal" data-target="#myModal">
-                    <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="img/destination-6.jpg" alt="">
-                        <div class="destination-overlay text-white text-decoration-none" href="">
-                            <h5 class="text-white">Ancol</h5>
-                        </div>
+    
+                    <!-- Recent Post -->
+                    <div class="mb-5">
+                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Post</h4>
+                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
+                            <div class="pl-3">
+                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
+                                <small>Jan 01, 2050</small>
+                            </div>
+                        </a>
+                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
+                            <div class="pl-3">
+                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
+                                <small>Jan 01, 2050</small>
+                            </div>
+                        </a>
+                        <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="">
+                            <img class="img-fluid" src="img/blog-100x100.jpg" alt="">
+                            <div class="pl-3">
+                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
+                                <small>Jan 01, 2050</small>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Destination Start -->
-
-
-    <!-- Modal  Start-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog d-flex align-items-center" role="document" style="min-width: 80%;">
-            <div class="modal-content" style="width: 200%;">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Description</h4>
-                </div>
-                <div class="modal-body">
-                    <div style="text-align: center;">
-                        <img src="img/about-1.jpg" class="mw-100" alt="Hotel Image">
-                    </div>
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto expedita dicta a, eum
-                            animi cum cupiditate facilis esse ut, corrupti ipsam placeat inventore voluptas sapiente
-                            beatae. Eaque, reiciendis magnam recusandae perferendis at natus repellendus incidunt minus
-                            facere rerum corrupti maiores expedita nesciunt nisi, non fugit quod explicabo ipsam.
-                            Molestias nostrum quos, perspiciatis, provident praesentium eaque dicta nobis consequuntur
-                            ipsam hic sint, nesciunt fuga architecto fugiat illum corporis vero sequi cumque. Rerum,
-                            cumque unde, laboriosam culpa perferendis vero sit eos similique cum a magni enim aliquam
-                            beatae ipsa fuga. Veniam rerum in possimus similique harum maxime explicabo, ipsam placeat
-                            fuga reiciendis.</p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal End -->
+    <!-- Blog End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-        <div class="row pt-5">
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5">
+        <div class="row pt-1">
             <div class="col-lg-3 col-md-6 mb-5">
                 <a href="" class="navbar-brand">
                     <h1 class="text-primary"><span class="text-white">EZ</span>GO</h1>
                 </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed
-                    vero lorem dolor dolor</p>
+                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
                 <div class="d-flex justify-content-start">
                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
@@ -260,8 +261,7 @@
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
                 <div class="w-100">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;"
-                            placeholder="Your Email">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
                         <div class="input-group-append">
                             <button class="btn btn-primary px-3">Sign Up</button>
                         </div>
@@ -270,8 +270,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
-        style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
                 <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
@@ -305,6 +304,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
