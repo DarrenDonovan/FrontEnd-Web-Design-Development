@@ -2548,7 +2548,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #2f79a0;
   border-color: #4b9dc9;
-  box-shadow: 0 0 0 0.2rem rgba(142, 194, 79, 0.5);
+  box-shadow: 0 0 0 0.2rem #5cb5e579;
 }
 
 .btn-primary.disabled,
@@ -2569,7 +2569,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(142, 194, 79, 0.5);
+  box-shadow: 0 0 0 0.2rem #5cb5e579;
 }
 
 .btn-secondary {
@@ -2872,7 +2872,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary:focus,
 .btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(122, 183, 48, 0.5);
+  box-shadow: 0 0 0 0.2rem #5cb5e579;
 }
 
 .btn-outline-primary.disabled,
@@ -2892,7 +2892,7 @@ fieldset:disabled a.btn {
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(122, 183, 48, 0.5);
+  box-shadow: 0 0 0 0.2rem #5cb5e579;
 }
 
 .btn-outline-secondary {
@@ -3827,13 +3827,13 @@ input[type="button"].btn-block {
 .custom-checkbox
   .custom-control-input:disabled:checked
   ~ .custom-control-label::before {
-  background-color: rgba(122, 183, 48, 0.5);
+  background-color: #5cb5e579;
 }
 
 .custom-checkbox
   .custom-control-input:disabled:indeterminate
   ~ .custom-control-label::before {
-  background-color: rgba(122, 183, 48, 0.5);
+  background-color: #5cb5e579;
 }
 
 .custom-radio .custom-control-label::before {
@@ -3847,7 +3847,7 @@ input[type="button"].btn-block {
 .custom-radio
   .custom-control-input:disabled:checked
   ~ .custom-control-label::before {
-  background-color: rgba(122, 183, 48, 0.5);
+  background-color: #5cb5e579;
 }
 
 .custom-switch {
@@ -3886,7 +3886,7 @@ input[type="button"].btn-block {
 .custom-switch
   .custom-control-input:disabled:checked
   ~ .custom-control-label::before {
-  background-color: rgba(122, 183, 48, 0.5);
+  background-color: #5cb5e579;
 }
 
 .custom-select {
@@ -5006,7 +5006,7 @@ a.badge-primary:focus {
 a.badge-primary:focus,
 a.badge-primary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(122, 183, 48, 0.5);
+  box-shadow: 0 0 0 0.2rem #5cb5e579;
 }
 
 .badge-secondary {
@@ -7653,6 +7653,10 @@ button.bg-dark:focus {
   box-shadow: none !important;
 }
 
+.w-15 {
+  width: 15% !important;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -7663,6 +7667,10 @@ button.bg-dark:focus {
 
 .w-75 {
   width: 75% !important;
+}
+
+.w-85 {
+  width: 85% !important;
 }
 
 .w-100 {
@@ -10223,18 +10231,18 @@ td {
   border-radius: 999px;
 }
 
-.btn-purchasedetail{
-float: right;
+.btn-purchasedetail {
+  float: right;
 }
-.purchaseno{
+.purchaseno {
   width: 90%;
 }
 
-.destination{
+.destination {
   width: 30%;
 }
 
-.contenttext{
+.contenttext {
   width: 80%;
   height: 30px;
   margin-left: 20px;
@@ -10254,15 +10262,14 @@ float: right;
   margin-left: 10px; /* Add some spacing between the buttons if desired */
 }
 
-
-.profilepicblog{
+.profilepicblog {
   width: 75px;
   height: 75px;
   border: 1px solid #000;
   border-radius: 50%;
 }
 
-.profilepiccomment{
+.profilepiccomment {
   width: 75px;
   height: 75px;
   border: 1px solid #000;
@@ -10270,7 +10277,7 @@ float: right;
   margin-bottom: 10px;
 }
 
-.teks{
+.teks {
   margin: 0;
   width: 10%;
 }
