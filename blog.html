@@ -272,21 +272,34 @@
                 </div>
                 <div class="modal-body">
                     <form action="">
-                        <div class="text-center">
+                        <div class="ml-5 pl-5">
                             <input type="text" class="w-75" placeholder="Blog Title">
                             <div class="py-3">
                                 <textarea rows="4" cols="50" placeholder="Type Your Blog Here..." class="w-75"></textarea>
                             </div>
+                            <div>
+                                <label for="dropdown">Choose Your Category</label>
+                                <br>
+                            <select id="dropdown">
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Bandung">Bandung</option>
+                                <option value="Surabaya">Subaraya</option>
+                                <option value="Denpasar">Denpasar</option>
+                              </select>
+                            </div>
+                              </div>
                         </div>
-                        <div class="p-3 ml-5 pl-5">
+                        <div class="p-2 mb-5 ml-5 pl-5">
                             <label for="imageBlog">Put Image to Your Blog</label>
+                            <br>
                             <input type="file" id="imageBlog">
                         </div>
                     </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
-                </div>
+                
             </div>
         </div>
     </div>
