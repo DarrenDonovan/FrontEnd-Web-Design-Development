@@ -45,8 +45,8 @@ a {
 
 .button {
   border-radius: 20px;
-  border: 1px solid #ff4b2b;
-  background-color: #ff4b2b;
+  border: 1px solid #0b81c1;
+  background-color: #0b81c1;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -55,6 +55,7 @@ a {
   text-transform: uppercase;
   transition: transform 80ms ease-in;
 }
+
 
 .button:active {
   transform: scale(0.95);
@@ -160,9 +161,9 @@ input {
 }
 
 .overlay { /*Change these color palettes to change the colors*/
-  background: #ff416c;
-  background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
-  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background: #5cb5e5;
+  background: -webkit-linear-gradient(to right, #5cb5e5, #5cb5e5);
+  background: linear-gradient(to right, #5cb5e5, #5cb5e5);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
