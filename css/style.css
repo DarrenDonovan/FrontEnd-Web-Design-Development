@@ -10281,3 +10281,30 @@ td {
   margin: 0;
   width: 10%;
 }
+
+.likecontainer{
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  
+}
+
+.likebutton{
+  width: 40px;
+  height: 35px;
+  margin-left: 600px;
+  position: absolute;
+}
+
+.likecontainer p,
+.likecontainer button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.delbutton{
+  width: 40px;
+  height: 35px;
+  margin-left: 650px;
+  position: absolute;
+}
