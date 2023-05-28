@@ -252,7 +252,16 @@
                             </tr>
                             <tr>
                                 <td>Schedule</td>
-                                <td class="py-1">xx:xx - xx:xx</td>
+                                <td class="py-1">
+                                    <table>
+                                        <tr>
+                                            <td>28 Mei 2023</td>
+                                        </tr>
+                                        <tr>
+                                            <td>xx:xx - xx:xx</td>
+                                        </tr>
+                                    </table>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Total:</td>
@@ -264,9 +273,9 @@
                         </tbody>
                     </table>
                     <div style="text-align: center;">
-                        <Button type="button" class="btn btn-primary">Cash</Button>
-                        <Button type="button" class="btn btn-primary" style="margin-inline: 20px;">Credit</Button>
-                        <Button type="button" class="btn btn-primary">Debit</Button>
+                        <Button type="button" class="btn btn-primary" id="cash">Cash</Button>
+                        <Button type="button" class="btn btn-primary" id="credit" style="margin-inline: 20px;">Credit</Button>
+                        <Button type="button" class="btn btn-primary" id="debit">Debit</Button>
                     </div>
                 </div>
                 <div class="modal-footer">

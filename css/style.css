@@ -10282,14 +10282,13 @@ td {
   width: 10%;
 }
 
-.likecontainer{
+.likecontainer {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  
 }
 
-.likebutton{
+.likebutton {
   width: 40px;
   height: 35px;
   margin-left: 600px;
@@ -10302,9 +10301,15 @@ td {
   vertical-align: middle;
 }
 
-.delbutton{
+.delbutton {
   width: 40px;
   height: 35px;
   margin-left: 650px;
   position: absolute;
+}
+
+#cash:focus,
+#debit:focus,
+#credit:focus {
+  color: #4b9dc9;
 }
