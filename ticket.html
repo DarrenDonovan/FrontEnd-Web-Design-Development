@@ -227,7 +227,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Booking Hotel</h4>
+                    <h4 class="modal-title" id="myModalLabel">Ticketing</h4>
                 </div>
                 <div class="modal-body">
                     <table>
@@ -236,9 +236,9 @@
                                 <td><img src="img/about-1.jpg" alt="Hotel Image" class="mw-100"></td>
                                 <td>
                                     <table>
-                                        <tr><td>Product ID</td></tr>
-                                        <tr><td>Product Name</td></tr>
-                                        <tr><td>From To Destination</td></tr>
+                                        <tr><td><b>Product ID</b></td></tr>
+                                        <tr><td><b>Product Name</b></td></tr>
+                                        <tr><td><b>From To Destination</b></td></tr>
                                     </table>
                                 </td>
                             </tr>
@@ -246,20 +246,20 @@
                         <tbody>
                             <tr>
                                 <td>Quantity</td>
-                                <td><button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;" onclick="decrement(event)">-</button> 
+                                <td class="py-1"><button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;" onclick="decrement(event)">-</button> 
                                     <input type="number" min="1" value="1" readonly required class="text-center" id="numedit" style="width: 50px;"> 
                                     <button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;" onclick="increment(event)">+</button></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td>xx:xx - xx:xx</td>
+                                <td>Schedule</td>
+                                <td class="py-1">xx:xx - xx:xx</td>
                             </tr>
                             <tr>
                                 <td>Total:</td>
-                                <td>Rp. xxx.xxx</td>
+                                <td class="py-1">Rp. xxx.xxx</td>
                             </tr>
                             <tr>
-                                <td>Payment Method</td>
+                                <td class="py-1">Payment Method</td>
                             </tr>
                         </tbody>
                     </table>
