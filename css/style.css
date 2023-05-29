@@ -10293,6 +10293,14 @@ td {
   height: 35px;
   margin-left: 600px;
   position: absolute;
+  border: none;
+}
+
+.likecount{
+  margin-left: 645px;
+  position: absolute;
+  text-align: center;
+  padding-top: 17px;
 }
 
 .likecontainer p,
