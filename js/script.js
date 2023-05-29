@@ -6,20 +6,3 @@ document.getElementById("showCommentsButton").addEventListener("click", function
       commentsdiv.style.display = "none";
     }
   });
-
-  var likeButton = document.getElementById("likeButton");
-var isClicked = false;
-
-likeButton.addEventListener("click", function() {
-  if (isClicked) {
-    likeButton.classList.remove("btn-danger");
-    likeButton.classList.add("btn-outline-danger");
-    isClicked = false;
-  } else {
-    likeButton.classList.remove("btn-outline-danger");
-    likeButton.classList.add("btn-danger");
-    isClicked = true;
-  }
-});
-  
-  
