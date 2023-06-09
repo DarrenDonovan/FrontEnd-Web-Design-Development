@@ -122,7 +122,7 @@
                 <div class="row align-items-center" style="min-height: 60px;">
                     <div class="col-md-10">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <select class="custom-select px-4" style="height: 47px;">
                                         <option selected>Location</option>
@@ -133,14 +133,14 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <div class="date" id="date2" data-target-input="nearest">
                                         <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Check In" data-target="#date2" data-toggle="datetimepicker"/>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <select class="custom-select px-4" style="height: 47px;">
                                         <option selected>Duration</option>
@@ -152,6 +152,13 @@
                                         <option value="6">6 Day</option>
                                         <option value="7">7 Day</option>
                                     </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="budget">
+                                        <input type="text" class="form-control p-4" placeholder="Your Budget"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -294,51 +301,85 @@
     <!-- Hotel Booking End -->
 
 
-    <!-- Modal  Start-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Booking Hotel</h4>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <thead>
-                            <tr>
-                                <td><img src="img/about-1.jpg" class="mw-100" alt="Hotel Image"></td>
-                                <td>Product ID <br>Product Name <br>Destination</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Duration (DAYS)</td>
-                                <td><button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;" onclick="decrement(event)">-</button> 
-                                    <input type="number" min="1" value="1" readonly required class="text-center" id="numedit" style="width: 50px;"> 
-                                    <button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;" onclick="increment(event)">+</button></td>
-                            </tr>
-                            <tr>
-                                <td>Total:</td>
-                                <td>Rp. xxx.xxx</td>
-                            </tr>
-                            <tr>
-                                <td>Payment Method</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div style="text-align: center;">
-                        <Button type="button" class="btn btn-primary">Cash</Button>
-                        <Button type="button" class="btn btn-primary" style="margin-inline: 20px;">Credit</Button>
-                        <Button type="button" class="btn btn-primary">Debit</Button>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Buy</button>
-                </div>
-            </div>
+     <!-- Modal Start -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Hotel Booking</h4>
+        </div>
+        <div class="modal-body">
+          <table>
+            <thead>
+              <tr>
+                <td><img src="img/about-1.jpg" alt="Hotel Image" class="mw-100"></td>
+                <td>
+                  <table>
+                    <tr>
+                      <td><b>Product ID</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>Product Name</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>From To Destination</b></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Duration (DAYS)</td>
+                    <td><button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;" onclick="decrement(event)">-</button> 
+                        <input type="number" min="1" value="1" readonly required class="text-center" id="numedit" style="width: 50px;"> 
+                        <button type="button" class="btn-primary" style="border-radius: 50%; height: 30px; width: 30px; border: 0;" onclick="increment(event)">+</button></td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td>Rp. xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td>Payment Method</td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center;">
+            <Button type="button" class="btn btn-primary">Cash</Button>
+            <Button type="button" class="btn btn-primary" style="margin-inline: 20px;">Credit</Button>
+            <Button type="button" class="btn btn-primary">Debit</Button>
         </div>
     </div>
-    <!-- Modal End -->
+          <div style="text-align: center; margin: 10px; margin-bottom: 15px;">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Buy</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal End -->
+  
+  <!-- Transaction Successful Modal-->
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel2">Purchase</h4>
+        </div>
+        <div class="modal-body">
+          <p>Your Purchase is Successful</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal End -->
       
 
     <!-- Footer Start -->

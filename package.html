@@ -122,10 +122,7 @@
                 <div class="row align-items-center" style="min-height: 60px;">
                     <div class="col-md-10">
                         <div class="row">
-                            <div class="col-md-3">
-                                    <h5 style="padding-top: 12px; text-align: center;">Destination</h5>
-                            </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="mb-3 mb-md-0">
                                     <select class="custom-select px-4" style="height: 47px;">
                                         <option selected>Destination</option>
@@ -136,10 +133,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <h5 style="padding-top: 12px; text-align: center;">Sort By</h5>
-                            </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="mb-3 mb-md-0">
                                     <select class="custom-select px-4" style="height: 47px;">
                                         <option selected>Sort By</option>
@@ -147,6 +141,13 @@
                                         <option value="2">Price</option>
                                         <option value="3">Rating</option>
                                     </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="budget">
+                                        <input type="text" class="form-control p-4" placeholder="Your Budget"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -288,53 +289,79 @@
     </div>
     <!-- Packages End -->
 
-
-    <!-- Modal  Start-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Package</h4>
-                </div>
-                <div class="modal-body">
-                    <table>
-                        <thead>
-                            <tr>
-                                <td><img src="img/about-1.jpg" alt="Hotel Image" class="mw-100"></td>
-                                <td>
-                                    <table>
-                                        <tr><td><b>Product ID</b></td></tr>
-                                        <tr><td><b>Product Name</b></td></tr>
-                                        <tr><td><b>Destination</b></td></tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Total:</td>
-                                <td class="py-1">Rp. xxx.xxx</td>
-                            </tr>
-                            <tr>
-                                <td class="py-1">Payment Method</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="text-center">
-                        <Button type="button" class="btn btn-primary" id="cash">Cash</Button>
-                        <Button type="button" class="btn btn-primary" id="credit" style="margin-inline: 20px;">Credit</Button>
-                        <Button type="button" class="btn btn-primary" id="debit">Debit</Button>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Buy</button>
-                </div>
-            </div>
+     <!-- Modal Start -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Ticketing</h4>
+        </div>
+        <div class="modal-body">
+          <table>
+            <thead>
+              <tr>
+                <td><img src="img/about-1.jpg" alt="Hotel Image" class="mw-100"></td>
+                <td>
+                  <table>
+                    <tr>
+                      <td><b>Product ID</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>Product Name</b></td>
+                    </tr>
+                    <tr>
+                      <td><b>From To Destination</b></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total:</td>
+                    <td class="py-1">Rp. xxx.xxx</td>
+                </tr>
+                <tr>
+                    <td class="py-1">Payment Method</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center">
+            <Button type="button" class="btn btn-primary" id="cash">Cash</Button>
+            <Button type="button" class="btn btn-primary" id="credit" style="margin-inline: 20px;">Credit</Button>
+            <Button type="button" class="btn btn-primary" id="debit">Debit</Button>
         </div>
     </div>
-    <!-- Modal End -->
+          <div style="text-align: center; margin: 10px; margin-bottom: 15px;">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">Buy</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+        <div class="modal-footer">
 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal End -->
+  
+  <!-- Transaction Successful Modal-->
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel2">Purchase</h4>
+        </div>
+        <div class="modal-body">
+          <p>Your Purchase is Successful</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
