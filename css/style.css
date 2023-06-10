@@ -10319,3 +10319,15 @@ td {
 #credit:focus {
   color: #4b9dc9;
 }
+
+.recommenddiv{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommenddiv div{
+  width: 33.33%;
+}
